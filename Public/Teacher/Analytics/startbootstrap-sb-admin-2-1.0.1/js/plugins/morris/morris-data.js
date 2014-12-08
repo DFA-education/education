@@ -61,82 +61,17 @@ $(function() {
         resize: true
     });
 
-
-    // Morris.Area({
-    //     element: 'morris-area-chart',
-    //     data: [{
-    //         period: '2009 Q2',
-    //         classA: 66,
-    //         classB: 61,
-    //         classC: 44
-    //     }, {
-    //         period: '2010 Q2',
-    //         classA: 67,
-    //         classB: 70,
-    //         classC: 45
-    //     }, {
-    //         period: '2011 Q2',
-    //         classA: 68,
-    //         classB: 71,
-    //         classC: 61
-    //     }, {
-    //         period: '2012 Q2',
-    //         classA: 70,
-    //         classB: 65,
-    //         classC: 66
-    //     }, {
-    //         period: '2013 Q2',
-    //         classA: 78,
-    //         classB: 69,
-    //         classC: 72
-    //     }, {
-    //         period: '2014 Q2',
-    //         classA: 81,
-    //         classB: 72,
-    //         classC: 75
-    //     }, {
-    //         period: '2015 Q2',
-    //         classA: 85,
-    //         classB: 77,
-    //         classC: 72
-    //     }, {
-    //         period: '2016 Q2',
-    //         classA: 82,
-    //         classB: 76,
-    //         classC: 79
-    //     }, {
-    //         period: '2017 Q2',
-    //         classA: 87,
-    //         classB: 78,
-    //         classC: 85
-    //     }, {
-    //         period: '2018 Q2',
-    //         classA: 79,
-    //         classB: 81,
-    //         classC: 80
-    //     }],
-    //     xkey: 'period',
-    //     ykeys: ['classA', 'classB', 'classC'],
-    //     labels: ['classA', 'classB', 'classC'],
-    //     pointSize: 2,
-    //     hideHover: 'auto',
-    //     resize: true
-    // });
-
     Morris.Donut({
         element: 'morris-donut-chart',
         data: [{
-            label: "Doctor",
+            label: "Download Sales",
             value: 12
         }, {
-            label: "Architect",
+            label: "In-Store Sales",
             value: 30
         }, {
-            label: "Judge",
+            label: "Mail-Order Sales",
             value: 20
-        }, {
-            label: "Astronaut",
-            value: 40
         }],
         resize: true
     });

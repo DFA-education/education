@@ -5,11 +5,16 @@ $(document).ready(function() {
     plot();
 
     function plot() {
-        var sin = [],
-            cos = [];
-        for (var i = 0; i < 12; i += 0.2) {
-            sin.push([i, Math.sin(i + offset)]);
-            cos.push([i, Math.cos(i + offset)]);
+        var classA = [],
+            classB = [];
+        // for (var i = 0; i < 12; i += 0.2) {
+        //     sin.push([i, Math.sin(i + offset)]);
+        //     cos.push([i, Math.cos(i + offset)]);
+        // }
+
+        for (var i = 0; i < 100; i += 5) {
+            classA.push([i, i+Math.floor((Math.random() * 20) + 1)]);
+            classB.push([i, .5*i+Math.floor((Math.random() * 10) + 1)]);
         }
 
         var options = {
@@ -25,8 +30,12 @@ $(document).ready(function() {
                 hoverable: true //IMPORTANT! this is needed for tooltip to work
             },
             yaxis: {
-                min: -1.2,
-                max: 1.2
+                min: 0,
+                max: 110
+            },
+            xaxis:{
+                min: 0,
+                max: 100
             },
             tooltip: true,
             tooltipOpts: {
@@ -39,11 +48,11 @@ $(document).ready(function() {
         };
 
         var plotObj = $.plot($("#flot-line-chart"), [{
-                data: sin,
-                label: "sin(x)"
+                data: classA,
+                label: "classA"
             }, {
-                data: cos,
-                label: "cos(x)"
+                data: classB,
+                label: "classB"
             }],
             options);
     }
