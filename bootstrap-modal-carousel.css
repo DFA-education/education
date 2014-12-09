@@ -25,6 +25,16 @@
   right: 0;
 }
 
+img .half-page {
+	width: 50px;
+	float: left;
+}
+
+.glyphicon .glyphicon-arrow-down {
+	padding-left: 100px;
+}
+	
+
 
 .modal.modal-fullscreen {
   /* Maximize the main wrappers on the screen */
