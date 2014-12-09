@@ -1,8 +1,17 @@
 $(document).ready(function() {
-	$("#myCarousel").hide();
+	$("#ACvsDCQuestion").hide();
+	
 	$('#testBtn').click(function() {
 		console.log('click');
-		$("#myCarousel").show();
+		$("#ACvsDCQuestion").show();
 //		$("#myModal").modal('toggle');
+	});
+	
+	$('#close-btn').click(function() {
+		$("#ACvsDCQuestion").hide();
+	});
+	
+	$("ACvsDCQuestionModal").on("hidden.bs.modal", function() {
+		$("#ACvsDCQuestion").hide();
 	});
 });
