@@ -12,7 +12,7 @@
 	</head>
 	
 	<body>
-		<button id="testBtn" type="button" data-toggle="modal" data-target="#myModal" data-local="#myCarousel">
+		<button id="testBtn" type="button" data-toggle="modal" data-target="#ACvsDCQuestionModal" data-local="#ACvsDCQuestion">
 			open modal
 		</button>
 		
@@ -31,63 +31,181 @@
 			<button type="button" class="btn" data-toggle="modal" data-target="#myModal" data-local="#myCarousel">Demo</button>
 		-->
 
-			<div id="myCarousel" class="carousel slide carousel-fit" data-ride="carousel">
+			<div id="ACvsDCQuestion" class="carousel slide carousel-fit question" data-ride="carousel" data-interval="false">
 			  <!-- Indicators -->
+<!--
 			  <ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#ACvsDCQuestion" data-slide-to="0" class="active"></li>
+				<li data-target="#ACvsDCQuestion" data-slide-to="1"></li>
+				<li data-target="#ACvsDCQuestion" data-slide-to="2"></li>
 			  </ol>
+-->
 
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner">
 				<div class="item active">
-				  <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
+<!--				  <img src="Public/Teacher/Homepage/alg2.png">-->
+					<p>The most common way electricity is generated is by an electrical generator; this involves rotating a loop
+
+of wire between two magnets. The loop is rotated mechanically (by wind, water, or another means), and 
+
+its interaction with the magnetic field causes an alternating current to flow through the wire.</p>
 				  <div class="carousel-caption">
+<!--
 					<h3>First slide label</h3>
 					<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+-->
 				  </div>
 				</div>
+				  
 				<div class="item">
-				  <img data-src="holder.js/750x400/auto/#666:#444/text:Second slide" alt="Second slide">
+<!--				  <img src="Public/Teacher/Homepage/multi.png">-->
+					<p>The frequency of the current is how often the alternating current switches directions along the wire.
+
+This corresponds to a full rotation of the loop of wire between the magnets. What is the most common 
+
+frequency for alternating current in the US?</p>
+					<br> 
+					
+					<p><b>A</b> : 10 Hz</p>
+					<p><b>B</b> : 60 Hz</p>
+					<p><b>C</b> : 180 Hz</p>
+					<p><b>D</b> : 240 Hz</p>
+<!--
+					<form>
+
+						<div class="form-group">
+							<label for="A">A : 10 Hz</label>
+							<input type="radio" class="form-control" id="A">
+		 				</div>
+					
+						<radio>10 Hz</radio>
+						<radio>60 Hz</radio>
+						<radio>120 Hz</radio>
+						<radio>240 Hz</radio>
+					</form>
+-->
 				  <div class="carousel-caption">
+<!--
 					<h3>Second slide label</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+-->
 				  </div>
 				</div>
+				  
 				<div class="item">
-				  <img data-src="holder.js/600x300/auto/#555:#333/text:Third slide" alt="Third slide">
+<!--				  <img src="Public/Teacher/Homepage/geometry.png">-->
+					<p>The voltage of the current is dependent on the number of electrons that are moving through the wire 
+
+(this is what we mean when we say the current). It also depends on the resistance of the wire – how 
+
+easily do the electrons pass by the other atoms in the wire? The strength of the magnetic field also 
+
+affects the strength of the current. What is the most common voltage for alternating current in the US?</p>
+					<br> 
+					
+					<p><b>A</b> : 10 V</p>
+					<p><b>B</b> : 120 V</p>
+					<p><b>C</b> : 240 V</p>
+					<p><b>D</b> : 300 V</p>
 				  <div class="carousel-caption">
+<!--
 					<h3>Third slide label</h3>
 					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+-->
 				  </div>
 				</div>
+				  
+				<div class="item">
+					<p><b>Plot the voltage (voltage on the y-axis, time on the x-axis)</b> for a typical alternating current source in the
+
+US. An example would be the socket in the wall.</p>
+					<!--POSSIBLY ADD AN IMAGE HERE-->
+			    </div>
+				  
+				  <div class="item">
+					  <p>Alternating current is the most common source of electrical energy in the US. However, imagine trying
+
+to charge a battery using alternating current.</p>
+					  
+					  <p>A battery has a buildup of positive charges on one side, and negative charges (electrons) on the other
+
+side. An alternating current would switch the directions of electrons rapidly – electrons couldn’t build up 
+
+on one side of the battery if they were constantly being pushed back and forth down the length of the 
+
+wire. So, to charge a battery – say, the battery in your iPad or laptop – we need to convert alternating 
+
+current to direct current.</p>
+				  </div>
+				  
+				  <div class="item">
+			      	<p>Direct current has the electrons flowing in one direction down the wire, which makes it possible to
+
+charge a battery. Your laptop charger converts alternating current to direct current. There are three 
+
+main steps to changing alternating current to direct current. We will explore them below.</p><br> 
+					 <p>
+Look back at the graph you generated earlier for voltage. The voltage goes positive, then negative, then 
+
+positive again. A rectifier is the part of the battery brick that takes the negative parts of the graph and 
+
+either removes them, or flips them up and makes them positive. Both possibilities are graphed below.</p>
+					  <p><b>What is the function that defines possibility (a) above?</b></p>
+				  </div>
+					
+					<div class="item">
+						<p>Laptop chargers don’t need the full voltage provided from the outlet – they require a lower voltage in
+
+order to power your laptop. The typical laptop needs around 20 volts to run. Your laptop charger lowers 
+
+the amplitude of the voltage from its original value down to a lower value. This is shown below.</p><br>
+						<!--IMAGE HERE-->
+						<p><b>What function describes the resulting voltage?</b></p>
+						</div>
+				  
+				  <div class="item">
+					  <p>The last step required is the smoothing of the periodic function. Direct current would be a constant,
+
+horizontal line on the voltage vs. time graph; we have removed the negative portions of the graph and 
+
+lowered the max voltage to a suitable value, but we still have a periodic function. A laptop charger is 
+
+able to smooth out the periodic aspect of the voltage function.</p><br>
+					  <!--IMAGE HERE-->
+					  </div>
+				  
+				  <div class="item">
+					  <p>Made it!</p><br>
+					  <p>Click right to return to the first page of this question.</p>
+					  </div>
+				  
 			  </div>
 
 			  <!-- Controls -->
-			  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			  <a class="left carousel-control" href="#ACvsDCQuestion" data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left"></span>
 			  </a>
-			  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+			  <a class="right carousel-control" href="#ACvsDCQuestion" data-slide="next">
 				<span class="glyphicon glyphicon-chevron-right"></span>
 			  </a>
 			</div>
 
 
 			<!-- Modal -->
-			<div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal fade " id="ACvsDCQuestionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
 			  <div class="modal-dialog">
 				<div class="modal-content">
 				  <div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Modal title</h4>
+<!--					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
+					<h4 class="modal-title">Alternating Current vs. Direct Current</h4>
 				  </div>
 				  <div class="modal-body">
-					<p>One fine body…</p>
+<!--					<p>One fine body…</p>-->
 				  </div>
 				  <div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
+					<button type="button" id="close-btn" class="btn btn-default" data-dismiss="modal">Close</button>
+<!--					<button type="button" class="btn btn-primary">Save changes</button>-->
 				  </div>
 				</div><!-- /.modal-content -->
 			  </div><!-- /.modal-dialog -->
