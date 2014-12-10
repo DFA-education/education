@@ -49,6 +49,7 @@ $(function() {
         labels: ['ConceptQ', 'ShortAnswer'],
         pointSize: 2,
         hideHover: 'auto',
+        lineColors: ['#7A92A3',  '#edc240', '#cb4b4b', '#9440ed'],
         resize: true
     });
 
@@ -56,52 +57,61 @@ $(function() {
         element: 'morris-donut-chart',
         data: [{
             label: "Astronaut",
-            value: 40
-        }, {
-            label: "Doctor",
             value: 30
         }, {
+            label: "Chef",
+            value: 25
+        }, {
             label: "Engineer",
+            value: 15
+        }, {
+            label: "News Reporter",
+            value: 30
+        }, {
+            label: "Designer",
             value: 20
         }],
-        resize: true
+        resize: true,
+        colors: ['#0B62A4', '#3980B5', '#679DC6', '#95BBD7', '#B0CCE1', '#095791', '#095085', '#083E67', '#052C48', '#042135'],
     });
 
     Morris.Bar({
         element: 'morris-bar-chart',
         data: [{
             y: 'August',
-            classA: 50,
+            // classA: 50,
             classB: 60
         }, {
             y: 'September',
-            classA: 55,
+            // classA: 55,
             classB: 68
         }, {
             y: 'October',
-            classA: 69,
+            // classA: 69,
             classB: 65
         }, {
             y: 'November',
-            classA: 75,
+            // classA: 75,
             classB: 71
         }, {
             y: 'December',
-            classA: 78,
+            // classA: 78,
             classB: 75
         }, {
             y: 'January',
-            classA: 81,
+            // classA: 81,
             classB: 85
         }, {
             y: 'Febuary',
-            classA: 100,
+            // classA: 100,
             classB: 100
         }],
         xkey: 'y',
-        ykeys: ['classA', 'classB'],
-        labels: ['Series A', 'Series B'],
+        // ykeys: ['classA', 'classB'],
+        ykeys: ['classB'],
+        labels: ['Class A'],
         hideHover: 'auto',
+        barColors: ['#cb4b4b'],
         resize: true
     });
 
