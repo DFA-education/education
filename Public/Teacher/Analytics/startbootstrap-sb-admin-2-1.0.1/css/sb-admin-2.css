@@ -13,6 +13,7 @@ body {
 }
 
 #page-wrapper {
+    padding-top: 9px;
     padding: 0 15px;
     min-height: 568px;
     background-color: #fff;
